@@ -26,6 +26,11 @@ body {
   margin: 0;
 }
 
+/* #wrapper {
+  max-width: 500px;
+  margin: auto;
+} */
+
 img {
   display: block;
   max-width: 100%;
@@ -40,4 +45,19 @@ nav {
 }
 nav ul {
   margin: 0;
+}
+
+.mainflex > * {
+  min-height: 100px;
+  border: 1px solid hotpink;
+}
+
+/* MAIN CONTENT */
+@media only screen and (min-width: 600px) {
+  .mainflex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* background-color: var(--pink-bg); */
+  }
 }
