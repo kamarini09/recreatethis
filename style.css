@@ -27,7 +27,13 @@ body {
   margin: 0;
   /* background-color: var(--pink-bg); */
 }
-
+.mainflex {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  border-radius: 25px;
+  /* background-color: var(--pink-bg); */
+}
 #wrapper {
   margin: auto;
   max-width: 600px;
@@ -150,20 +156,103 @@ button:hover {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
-
+/* ------------------------------------------------- */
 .tasks {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   background-color: var(--pink-bg);
 }
-/* MAIN CONTENT */
-@media only screen and (min-width: 600px) {
-  .mainflex {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    border-radius: 25px;
-    /* background-color: var(--pink-bg); */
-  }
+
+.title {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 0;
+  color: var(--white-text);
+  border-bottom: 2px solid var(--white-bg);
 }
+.title h2 {
+  margin-left: 0.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.title button {
+  border: none;
+  background-color: var(--white-bg);
+  color: var(--bold-pink);
+
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 2rem;
+  border-radius: 5px;
+
+  cursor: pointer;
+}
+
+.title button:hover {
+  background-color: var(--h-color);
+  color: var(--white-bg);
+}
+.task1 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--white-bg);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.task2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--white-bg);
+  padding: 1rem;
+  border-radius: 10px;
+}
+.add-task {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--small-box);
+  padding: 1rem;
+  border-radius: 10px;
+  border-style: dotted;
+  cursor: pointer;
+}
+.task-details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  color: var(--text-color);
+  background-color: var(--pink-line);
+  border-top: 1px solid var(--white-bg);
+}
+.task-details span {
+  font-weight: bold;
+  font-size: larger;
+  color: var(--white-text);
+}
+/* ------------------------------------------------- */
