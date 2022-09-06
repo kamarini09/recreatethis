@@ -84,9 +84,204 @@
 
       <main>
         <div class="mainflex">
-          <div class="start"></div>
-          <div class="tasks"></div>
-          <div class="text"></div>
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <div class="start">
+            <div class="menu">
+              <button>Pomodoro</button>
+              <button>Short Break</button>
+              <button>Long Break</button>
+            </div>
+            <div class="timer">24:59</div>
+            <button class="start-button">START</button>
+            <div class="working-on">
+              <p class="working-on text">WORKING ON</p>
+              <p class="milk-the-cat">Milk the cat</p>
+            </div>
+          </div>
+
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <div class="tasks">
+            <div class="title">
+              <h2>Tasks</h2>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- --------------------------------------------------------------------- -->
+            <div class="task1">
+              <div class="task1-text">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check-circle"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                  />
+                  <path
+                    d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"
+                  />
+                </svg>
+                Milk the cat
+              </div>
+
+              <div class="count-task1">0/1</div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- --------------------------------------------------------------------- -->
+            <div class="task2">
+              <div class="task2-text">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-check-circle-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                  />
+                </svg>
+                Code this
+              </div>
+
+              <div class="count-task2">0/1</div>
+              <button>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-three-dots-vertical"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"
+                  />
+                </svg>
+              </button>
+            </div>
+            <!-- --------------------------------------------------------------------- -->
+            <button class="add-task">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-plus-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"
+                />
+              </svg>
+              Add Task
+            </button>
+            <div class="task-details">
+              <p>Est: <span>1</span></p>
+              <p>Act: <span>0</span></p>
+              <p>Finish at <span>13:57</span></p>
+            </div>
+          </div>
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <!-- --------------------------------------------------------------------- -->
+          <div class="text">
+            <h1>An online Pomodoro Timer to boost your productivity</h1>
+            <h2>What is Pomofocus?</h2>
+            <p>
+              Pomofocus is a customizable pomodoro timer that works on desktop &
+              mobile browser. The aim of this app is to help you focus on any
+              task you are working on, such as study, writing, or coding. This
+              app is inspired by <span>Pomodoro Technique</span> which is a time
+              management method developed by Francesco Cirillo.
+            </p>
+            <h2>What is Pomodoro Technique?</h2>
+            <p>
+              The Pomodoro Technique is created by Francesco Cirillo for a more
+              productive way to work and study. The technique uses a timer to
+              break down work into intervals, traditionally 25 minutes in
+              length, separated by short breaks. Each interval is known as a
+              pomodoro, from the Italian word for 'tomato', after the
+              tomato-shaped kitchen timer that Cirillo used as a university
+              student. - <span>Wikipedia</span>
+            </p>
+            <h2>How to use the Pomodoro Timer?</h2>
+            <ol class="first-list">
+              <li><span>Add tasks</span> to work on today</li>
+              <li>
+                <span>Set estimate pomodoros</span> (1 = 25min of work) for each
+                tasks
+              </li>
+              <li><span>Select a task</span> to work on</li>
+              <li>
+                <span>Start timer </span> and focus on the task for 25 minutes
+              </li>
+              <li>
+                <span>Take a break</span> for 5 minutes when the alarm ring
+              </li>
+              <li><span>Iterate</span> 3-5 until you finish the tasks</li>
+            </ol>
+            <h2>Features</h2>
+            <ul class="second-list">
+              <li>
+                <span>Responsive design</span> that works with desktop and
+                mobile
+              </li>
+              <li>
+                <span>Color transition</span> to switch moods between work time
+                and rest time
+              </li>
+              <li>
+                <span>Audio notification</span>at the end of a timer period
+              </li>
+              <li>
+                <span>Customizable timer</span>intervals to suit your preference
+              </li>
+            </ul>
+            <h2>Download App</h2>
+            <ul class="third-list">
+              <li>
+                <span>For macOS</span>(zip file) *Right click the icon to open
+              </li>
+              <li><span>For Windows</span>(zip file)</li>
+            </ul>
+          </div>
         </div>
         <footer>
           <div class="words">
