@@ -25,13 +25,13 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   margin: 0;
-  /* background-color: var(--pink-bg); */
+  background-color: var(--pink-bg);
 }
 .mainflex {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  border-radius: 25px;
+
   /* background-color: var(--pink-bg); */
 }
 #wrapper {
@@ -156,6 +156,7 @@ button:hover {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
 /* ------------------------------------------------- */
 .tasks {
   display: flex;
@@ -256,3 +257,55 @@ button:hover {
   color: var(--white-text);
 }
 /* ------------------------------------------------- */
+.text {
+  background-color: var(--white-bg);
+}
+
+.text h1 {
+  color: var(--h-color);
+}
+
+.text h2 {
+  color: var(--h-color);
+  border-bottom: 3px solid var(--pink-line);
+}
+
+.text p {
+  color: var(--text-color);
+}
+
+.text span {
+  color: var(--pink-line);
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--white-bg);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+.words {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.icon {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 00.5rem;
+}
+.kama {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.kama span {
+  color: var(--pink-bg);
+}
