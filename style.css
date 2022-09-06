@@ -4,6 +4,7 @@
   --text-color: #735c60;
   --bold-pink: #d95252;
   --pink-line: #f99f9a;
+  --white-text: #ffffff;
 
   /* background colours */
   --white-bg: #ffffff;
@@ -24,13 +25,13 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-size: 100%;
   margin: 0;
+  /* background-color: var(--pink-bg); */
 }
 
-/* #wrapper {
-  max-width: 500px;
+#wrapper {
   margin: auto;
-} */
-
+  max-width: 600px;
+}
 img {
   display: block;
   max-width: 100%;
@@ -38,15 +39,45 @@ img {
 }
 a {
   text-decoration: none;
-  color: var(--white-bg);
+  color: var(--white-text);
 }
 nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: var(--pink-bg);
-}
-nav ul {
-  margin: 0;
+  height: 80px;
+  color: var(--white-bg);
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-bottom: 2pxsolid var(--h-color);
 }
 
+.logo {
+  margin: 0;
+}
+/* .logo:hover {
+  background-color: var(--pink-line);
+} */
+
+.navbar button {
+  border: none;
+  background-color: var(--small-box);
+  color: var(--white-text);
+  padding: 6px 7px;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.navbar svg {
+  margin-right: 1px;
+}
+
+button:hover {
+  background-color: var(--pink-line);
+}
 .mainflex > * {
   min-height: 100px;
   border: 1px solid hotpink;
